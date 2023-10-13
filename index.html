@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Run C Code on GitHub Pages</title>
+</head>
+<body>
+  <button onclick="runCCode()">Run C Code</button>
+  <pre id="output"></pre>
+
+  <script>
+    function runCCode() {
+      // Replace 'your_executable_filename' with the actual name of your C executable file
+      const executableFilename = 'test.exe';
+
+      const outputElement = document.getElementById('output');
+
+      // Run the C executable
+      const process = Deno.run({
+        cmd: [`./${executableFilename}`], // Adjust the command accordingly
+        stdout: 'piped',
+        stderr: 'piped'
+      });
+
+      process.output().then(async (output) => {
+        const decoder = new TextDecoder();
+        const stdout = decoder.decode(output);
+
+        outputElement.textContent = stdout;
+      });
+
+      process.status().then((status) => {
+        console.log('Process exited with code:', status.code);
+      });
+    }
+  </script>
+</body>
+</html>
