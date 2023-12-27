@@ -1,58 +1,298 @@
- <!Doctype html>
-<html>
-
-<head>
-     <title>HTML Application</title>
-	 <link href="css/site.css" rel="stylesheet">
-</head>
-
-<body>
-    <div class="main-container">
-        <div class="cloud-image">
-            <img src="img/successCloudNew.svg" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <title>Hieu Pc</title>
+  </head>
+  <body>
+    <header>
+      <div class="topbar">
+        <div class="row-flex">
+          <div class="topbar-logo">
+            <span>HIEU<a href="">STYLE</a></span>
+          </div>
+          <div class="topbar-nav">
+            <nav>
+              <ul>
+                <li><a href="">Tham gia CoolClub</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Về HieuStyle</a></li>
+                <li><a href="">Trung Tâm CSKH</a></li>
+                <li><a href="">Đăng Nhập</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <div class="content">
-            <div class="tweet-container">
-            <a href="http://twitter.com/intent/tweet/?text=I%20just%20created%20a%20new%20HTML%20website%20on%20Azure%20using%20Azure%20DevOps%20Project&hashtags=AzureDevOpsProject%2CVSTS%20%40Azure%20%40VSTS">
-                <img src="img/tweetThis.svg" />
-            </a>            
+      </div>
+      <div class="topbarpromotion">
+        <span
+          >Trải nghiệm BST-Đông <a href=""><u>Mua Ngay</u></a></span
+        >
+      </div>
+      <div class="topbar-menu">
+        <div class="row-flex">
+          <div class="head-logo">
+            <img
+              src="https://static.coolmate.me/images/logo-coolmate-noel-2023.png?v=1"
+              alt="Logo"
+            />
+          </div>
+          <div class="head-nav">
+            <nav>
+              <ul>
+                <li><a href="">SALE</a></li>
+                <li><a href="#">SẢN PHẨM</a></li>
+                <li><a href="#">ĐÒ LÓT</a></li>
+                <li><a href="#">MẶC HÀNG NGÀY</a></li>
+                <li><a href="">NƯỚC HOA</a></li>
+                <li><a href="#">ĐỒ THỂ THAO</a></li>
+                <li><a href="#">SẢN XUẤT RIÊNG</a></li>
+                <li><a href="">CARE&SHARE</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="head-search">
+            <input type="text" placeholder="Nhập tìm kiếm" />
+            <i class="ri-search-line"></i>
+          </div>
+          <div class="head-cart-account">
+            <button>
+              <a href=""
+                ><img src="./asset/img/icon-account-white-new.svg" alt=""
+              /></a>
+            </button>
+            <button>
+              <a href=""
+                ><img src="./asset/img/icon-cart-white-new.svg" alt=""
+              /></a>
+            </button>
+          </div>
         </div>
-            <div class="content-body">
-                <div class="success-text">Success!</div>
-                <div class="description line-1"> Azure DevOps Project has been successfully setup</div>
-                <div class="description line-2"> Your HTML app is up and running on Azure</div>
-                <div class="next-steps-container">
-                    <div class="next-steps-header">Next up</div>
-                    <div class="next-steps-body">
-                        <div class="step">
-                            <div class="step-icon">
-                                <img src="img/cloneWhite.svg">
-                            </div>
-                            <div class="step-text"><a href="https://go.microsoft.com/fwlink/?linkid=862409">Clone your code repository and start developing your application on IDE of your choice</a></div>
-                        </div>
-                        <div class="step">
-                            <div class="step-icon">
-                                <img src="img/deployWhite.svg">
-                            </div>
-                            <div class="step-text"><a href="https://go.microsoft.com/fwlink/?linkid=862410">View your CI/CD pipeline on Visual Studio Team Services and customize it as per your needs</a></div>
-                        </div>
-                        <div class="step">
-                            <div class="step-icon">
-                                <img src="img/stackWhite.svg">
-                            </div>
-                            <div class="step-text"><a href="http://portal.azure.com">View your service stack in the Azure Portal</a></div>
-                        </div>
-                        <div class="step">
-                            <div class="step-icon">
-                                <img src="img/lightbulbWhite.svg">
-                            </div>
-                            <div class="step-text"><a href="https://go.microsoft.com/fwlink/?linkid=862126">Learn more about all you can do with Azure projects by visiting the documentation</a></div>
-                        </div>
-                    </div>
-                </div>
+      </div>
+    </header>
+    <section class="slider">
+      <div class="slider-items">
+        <div class="slider-item">
+          <img src="./asset/img/banner/banner1.jpg" alt="" />
+        </div>
+        <div class="slider-item">
+          <img src="./asset/img/banner/banner2.png" alt="" />
+        </div>
+       
+      </div>
+      <div class="slider-arrow">
+        <i class="ri-arrow-right-fill"></i>
+        <i class="ri-arrow-left-fill"></i>
+      </div>
+    </section>
+    <section class="hot-products">
+      <div class="container">
+        <div class="row-grid">
+          <p class="heading-text">Sản Phẩm Mới</p>
+        </div>
+        <div class="row-grid row-grid-hot-products">
+          <div class="hot-products-item">
+            <a href=""
+              ><img src="./asset/img/product-hot/product1.jpg" alt=""
+            /></a>
+            <p><a href="">Áo Sweatshirt thể thao Active</a></p>
+            <span>Cotton 360GSM / Nâu</span>
+            <div class="hot-products-item-price">
+              <p>
+                249,000 <sup>đ</sup><span>269,000<sup>đ</sup></span>
+              </p>
             </div>
+          </div>
+          <div class="hot-products-item">
+            <a href=""
+              ><img src="./asset/img/product-hot/product2.jpg" alt=""
+            /></a>
+            <p><a href="">Áo Sweatshirt thể thao Active</a></p>
+            <span>Cotton 360GSM / Nâu</span>
+            <div class="hot-products-item-price">
+              <p>
+                249,000 <sup>đ</sup><span>269,000<sup>đ</sup></span>
+              </p>
+            </div>
+          </div>
+          <div class="hot-products-item">
+            <a href=""
+              ><img src="./asset/img/product-hot/product3.jpg" alt=""
+            /></a>
+            <p><a href="">Áo Sweatshirt thể thao Active</a></p>
+            <span>Cotton 360GSM / Nâu</span>
+            <div class="hot-products-item-price">
+              <p>
+                249,000 <sup>đ</sup><span>269,000<sup>đ</sup></span>
+              </p>
+            </div>
+          </div>
+          <div class="hot-products-item">
+            <a href=""
+              ><img src="./asset/img/product-hot/product4.jpg" alt=""
+            /></a>
+            <p><a href="">Áo Sweatshirt thể thao Active</a></p>
+            <span>Cotton 360GSM / Nâu</span>
+            <div class="hot-products-item-price">
+              <p>
+                249,000 <sup>đ</sup><span>269,000<sup>đ</sup></span>
+              </p>
+            </div>
+          </div>
+          <div class="hot-products-item">
+            <a href=""
+              ><img src="./asset/img/product-hot/product5.jpg" alt=""
+            /></a>
+            <p><a href="">Áo Sweatshirt thể thao Active</a></p>
+            <span>Cotton 360GSM / Nâu</span>
+            <div class="hot-products-item-price">
+              <p>
+                249,000 <sup>đ</sup><span>269,000<sup>đ</sup></span>
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+    <div>
+      <div class="banner-top">
+        <img src="./asset/img/banner/mceclip3.png" alt="">
+      </div>
     </div>
-</body>
+    <section class="popular-products">
+      <div class="container">
+        <div class="row-grid">
+          <p class="heading-text">Sản Phẩm Phổ Biến</p>
+        </div>
+        <div class="row-grid row-grid-hot-products">
+          <div class="hot-products-item">
+            <a href=""
+              ><img src="./asset/img/product-hot/product1.jpg" alt=""
+            /></a>
+            <p><a href="">Áo Sweatshirt thể thao Active</a></p>
+            <span>Cotton 360GSM / Nâu</span>
+            <div class="hot-products-item-price">
+              <p>
+                249,000 <sup>đ</sup><span>269,000<sup>đ</sup></span>
+              </p>
+            </div>
+          </div>
+          
+          <div class="hot-products-item">
+            <a href=""
+              ><img src="./asset/img/product-hot/product2.jpg" alt=""
+            /></a>
+            <p><a href="">Áo Sweatshirt thể thao Active</a></p>
+            <span>Cotton 360GSM / Nâu</span>
+            <div class="hot-products-item-price">
+              <p>
+                249,000 <sup>đ</sup><span>269,000<sup>đ</sup></span>
+              </p>
+            </div>
+          </div>
+          <div class="hot-products-item">
+            <a href=""
+              ><img src="./asset/img/product-hot/product3.jpg" alt=""
+            /></a>
+            <p><a href="">Áo Sweatshirt thể thao Active</a></p>
+            <span>Cotton 360GSM / Nâu</span>
+            <div class="hot-products-item-price">
+              <p>
+                249,000 <sup>đ</sup><span>269,000<sup>đ</sup></span>
+              </p>
+            </div>
+          </div>
+          <div class="hot-products-item">
+            <a href=""
+              ><img src="./asset/img/product-hot/product4.jpg" alt=""
+            /></a>
+            <p><a href="">Áo Sweatshirt thể thao Active</a></p>
+            <span>Cotton 360GSM / Nâu</span>
+            <div class="hot-products-item-price">
+              <p>
+                249,000 <sup>đ</sup><span>269,000<sup>đ</sup></span>
+              </p>
+            </div>
+          </div>
+          <div class="hot-products-item">
+            <a href=""
+              ><img src="./asset/img/product-hot/product5.jpg" alt=""
+            /></a>
+            <p><a href="">Áo Sweatshirt thể thao Active</a></p>
+            <span>Cotton 360GSM / Nâu</span>
+            <div class="hot-products-item-price">
+              <p>
+                249,000 <sup>đ</sup><span>269,000<sup>đ</sup></span>
+              </p>
+            </div>
+          </div>
 
+        </div>
+      </div>
+    </section>
+    <div>
+      <div>
+        <img src="./asset/img/banner/banner2top.jpg" alt="">
+      </div>
+    </div>
+    <div>
+
+    </div>
+    
+    <!-- footer -->
+    <footer>
+      <div class="container-footer">
+        <div class="row-grid">
+          <div class="footer-item">
+            <p>COOLCULB</p>
+            <p><a href="">Đăng kí thành viên</a></p>
+            <p><a href="">Ưu đãi & Đặc Quyền</a></p>
+          </div>
+          <div class="footer-item">
+            <p>CHÍNH SÁCH</p>
+            <p><a href="">Chính sách đổi trả 60 ngày</a></p>
+            <p><a href="">Chính sách khuyến mãi</a></p>
+            <p><a href="">Chính sách bảo mật/a></p>
+            <p><a href="">Chính sách giao hàng</a></p>
+            <p class="bolder-footer ">COOLMATE.ME</p>
+            <p><a href="">Lịch sử thay đổi website</a></p>
+          </div>
+          <div class="footer-item">
+            <p>CHĂM SÓC KHÁCH HÀNG</p>
+            <p><a href="">Trải nghiệm mua sắm 100% hài lòng</a></p>
+            <p><a href="">Hỏi đáp-FAQs</a></p>
+            <p class="bolder-footer ">KIẾN THỨC MẶC ĐẸP</p>
+            <p><a href="">Hướng dẫn chọn size</a></p>
+            <p><a href="">Blog</a></p>
+            <p><a href="">Group mặc đẹp sống chất</a></p>
+          </div>
+          <div class="footer-item">
+            <p>TÀI LIỆU -TUYỂN DỤNG</p>
+            <p><a href="">Tuyển dụng</a></p>
+            <p><a href="">Đăng kí bản quyền</a></p>
+            <p class="bolder-footer ">VỀ COOLMATE</p>
+            <p><a href="">Coolmate101</a></p>
+            <p><a href="">DMKH xuất sắc</a></p>
+            <p><a href="">Cậu chuyện về Coolmate</a></p>
+            <p><a href="">Nhà máy</a></p>
+            <p><a href="">Care & Share</a></p>
+          </div>
+          
+          <div class="footer-item">
+            <p>ĐỊA CHỈ LIÊN HỆ</p>
+          <p><u>Văn phòng Hà Nội:</u>Tầng 3-4, Tòa nhà BMM, KM2, Đường Phùng Hưng, Phường Phúc La, Quận Hà Đông, TP Hà Nội</p>
+         <p><u>Văn phòng Tp HCM:</u>Lầu 1, Số 163 Trần Trọng Cung, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh</p>
+        </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./asset/js/script.js"></script>
+  </body>
 </html>
